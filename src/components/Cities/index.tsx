@@ -14,8 +14,8 @@ interface CitiesProps {
 export function Cities({ cities }: CitiesProps) {
   return (
     <Container  maxW="1160" margin="0 auto" p={["40px 0 20px 0", "80px 0 100px 0"]}>
-        <Heading paddingBottom="40px" fontWeight="500" textAlign={["center", "left"]} fontSize={["22px","36px"]} padding={["10px", "0px"]} lineHeight="54px" color="dark.800">Cities +100</Heading>
-        <Flex flexWrap="wrap" justifyContent="center" gap="45px">
+        <Heading paddingBottom="40px" fontWeight="500" textAlign={["center", "left"]} fontSize={["22px","36px"]} padding={["10px 0", "15px 0"]} lineHeight="54px" color="dark.800">Cities +100</Heading>
+        <Flex flexWrap="wrap" justifyContent={["center", "flex-start"]} gap="45px">
           {cities.map(city => {
             return (
               <Box background="light.100" key={city.name} marginLeft="0 !important">
